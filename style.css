@@ -1,0 +1,64 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Inter;
+    box-sizing: border-box;
+   
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: whitesmoke
+}
+.main{
+    background-color: white;
+    padding: 2rem;
+
+}
+
+.wrapper{
+    display: flex;
+    gap: 1rem;
+    /* background-color: red; */
+}
+
+.controls{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1rem;
+
+}
+.filter .slider input{
+    accent-color: blue;
+}
+
+.image-preview{
+    width: 30rem;
+    height: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* overflow: hidden; */
+}
+.image-preview img{
+    aspect-ratio: 1/1;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.disable  :where(.filter ,.rotate ,.controls>.reset-filter ,.save-img){
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.active{
+    background-color: blue;
+}
