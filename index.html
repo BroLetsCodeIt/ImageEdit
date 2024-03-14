@@ -103,50 +103,54 @@
         </aside>
     </div>
     <div class="main disable flex-1 h-screen ">
-        <h2>Easy Image Editor</h2>
-        <div class="wrapper ">
-            <div class="editor-panel ">  
+        <h2 class="text-4xl font-bold pb-3">Image Edit.</h2>
+        <div class="wrapper  p-2 border border-gray-200 rounded-md  flex flex-col lg:flex-row">
+            <div class="editor-panel  flex flex-col  border border-gray-200 p-2 rounded-md flex flex-col items-start justify-between">  
                   <div class="filter">
-                    <label class="title">Filters</label>
-                    <div class="options">
-                        <button id="brightness" class="active btn">Brightness</button>
-                        <button id="saturation" class="btn">Saturation</button>
-                        <button id="inversion"  class="btn"> Inversion</button>
-                        <button id="grayscale" class="btn">Grayscale</button>
+                    <label class="title font-semibold text-2xl">Filters.</label>
+                    <div class="options flex gap-3 pt-2 flex-wrap">
+                        <button id="brightness" class="active btn p-1 rounded-md px-2">Brightness</button>
+                        <button id="saturation" class="btn p-1 rounded-md px-2 ">Saturation</button>
+                        
+                        <button id="inversion"  class="btn p-1 px-2 rounded-md"> Inversion</button>
+                        <button id="grayscale" class="btn p-1 px-2 rounded-md">Grayscale</button>
                     </div>
-                    <div class="slider">
+                    <div class="slider pt-4">
                         <div class="filter-info">
-                            <p class="name filter-name">Brightness</p>
+                            <p class="name filter-name pt-3 font-semibold text-2xl pb-3">Brightness.</p>
                             <p class="name filter-val">50%</p>
                         </div>
-                        <input type="range" min="0" max="200" value="100">  
+                        <input type="range" min="0" max="200" value="100" class="w-full">   
                     </div>
                  </div>
-                 <div class="rotate">
-                    <label class="title">Rotate & Flip</label>
-                    <div class="options">
-                        <button id="left"><i class="uil uil-redo"></i></button>
-                        <button id="right"><i class="uil uil-history-alt"></i></button>
-                        <button id="horizontal"><i class="uil uil-flip-h"></i></button>
-                        <button id="vertical"><i class="uil uil-flip-v"></i></button>
+                 <div class="rotate flex flex-col gap-4">
+                    <label class="title font-semibold text-2xl ">Rotate & Flip.</label>
+                    <div class="options flex gap-4 w-full">
+                        <button id="left" class="bg-gray-200 p-4 rounded-md text-4xl"><i class="uil uil-redo"></i></button>
+                        <button id="right" class="bg-gray-200 p-4 rounded-md text-4xl" ><i class="uil uil-history-alt"></i></button>
+                        <button id="horizontal" class="bg-gray-200 rounded-md p-4 text-4xl"><i class="uil uil-flip-h"></i></button>
+                        <button id="vertical" class="bg-gray-200 rounded-md p-4 text-4xl"><i class="uil uil-flip-v"></i></button>
                     </div>  
                  </div>
             </div>
-            <div class="image-preview"> 
-                 <img src="back.png" alt="preview-img">
+            <div class="image-preview border-2 border-gray-400 rounded-md flex-1 border-dashed flex flex-col"> 
+                 <img src="backs.png" alt="preview-img" class="" draggable="true">
+                 <!-- <i class="uil uil-image-upload" ></i>
+                 <strong alt="preview-img">Upload the Image.</strong>
+                 <p class="font-semibold text-gray-400">(PNG or JPG)</p>
+                 <small class="border border-gray-400/2 rounded-md mt-1 px-3 ">Adapts to image</small> -->
             </div>
         </div>
         <div class="controls">
-            <button class="reset-filter">Reset Filter</button>
+            <button class="reset-filter bg-black text-white p-2 border-2 border-gray-400 rounded-md">Reset Filter</button>
             <div class="row">
                 <input type="file" accept="image/*" class="file-input" hidden>
-                <button class="choose-img">Choose Img</button>
-                <button class="save-img" download>Save Image</button>
+                <button class="choose-img bg-black text-white p-2 px-4 rounded-md">Choose Img 🔗</button>
+                <button class="save-img border border-gray-200 p-2 px-4 rounded-md text-black" download>Save Image ⬇️</button>
             </div>
         </div>
     </div>
     
-
 </div>
 
 
