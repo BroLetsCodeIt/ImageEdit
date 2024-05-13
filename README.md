@@ -1,3 +1,7 @@
+[Live Demo](https://broletscodeit.github.io/ImageEdit/)
+
+--- 
+
 ImageEdit is a place where you can edit your photos.
 - GrayScale
 - Inversion
